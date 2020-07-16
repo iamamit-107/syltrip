@@ -1,0 +1,27 @@
+#how-works {
+    padding: 90px 0;
+    .polygon-bg {
+        background-size: contain;
+        background-position: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        padding: 90px 0;
+
+        h1 {
+            font-weight: 500;
+            font-size: 48px;
+            color: #9507b2;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            color: #000000;
+        }
+    }
+
+    .line-bg {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

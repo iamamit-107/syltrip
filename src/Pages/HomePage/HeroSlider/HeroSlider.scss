@@ -1,0 +1,33 @@
+.hero-slider {
+    .carousel-item {
+        background-position: center;
+        background-size: contain;
+        height: 100vh;
+    }
+
+    .carousel-text {
+        .title {
+            font-size: 60px;
+            margin-bottom: 30px;
+
+            .title-span {
+                font-size: 24px;
+            }
+        }
+
+        .h5-title {
+            margin-top: 30px;
+        }
+    }
+
+    .carousel-item {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 7%;
+    }
+}

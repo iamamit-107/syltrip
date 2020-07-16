@@ -1,0 +1,36 @@
+header {
+    .navbar-brand {
+        z-index: 10;
+        position: absolute;
+        top: 0px;
+    }
+
+    .nav-link {
+        color: #000 !important;
+        position: relative;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        border-bottom: 5px solid transparent;
+        margin-left: 20px;
+        /* top: -12px; */
+
+        &:hover {
+            border-color: #9507b2;
+        }
+    }
+
+    hr {
+        position: relative;
+        top: 47px;
+        z-index: 1;
+    }
+
+    .navbar-collapse {
+        position: relative;
+    }
+}
+
+.navbar-collapse {
+    position: relative;
+    border-bottom: none;
+}

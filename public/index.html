@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Web site created using create-react-app"
+        />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -23,13 +23,52 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
+    
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+        <!-- slick -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            charset="UTF-8"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+
+        <!-- bootstrap css -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+        />
+
+        <!-- fontawesome kit -->
+        <script
+            src="https://kit.fontawesome.com/e4970535a3.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- ubuntu font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <script
+            type="text/javascript"
+            src="https://pathao.com/bn/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"
+        ></script>
+
+        <title>Syltrips Ltd.</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +78,113 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+        <!-- bootstrap js -->
+        <!-- JavaScript and dependencies -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+            crossorigin="anonymous"
+        ></script>
+
+        <script type="text/javascript">
+            (function ($) {
+                //tab progress animation
+                var activetabs = $(
+                    "#main-platform-tab-carousel .nav-tabs > li.active"
+                );
+                var active1 = activetabs.filter(".active");
+                var active_pb1 = active1.find(".tab-progress-bar");
+                $(active_pb1).animate(
+                    {
+                        width: "100%",
+                    },
+                    {
+                        easing: "linear",
+                        duration: 8000,
+                        complete: function () {
+                            $(".tab-progress-bar").css("width", "0%");
+                        },
+                    }
+                );
+                // Tab-Pane change function
+                var tabChange = function () {
+                    var tabs = $("#main-platform-tab-carousel .nav-tabs > li");
+                    var active = tabs.filter(".active");
+                    var nextli = active.next("li").length
+                        ? active.next("li")
+                        : tabs.filter(":first-child");
+                    var nexta = active.next("li").length
+                        ? active.next("li").find("a")
+                        : tabs.filter(":first-child").find("a");
+
+                    $(active).removeClass("active");
+                    $(nextli).addClass("active");
+                    nexta.tab("show");
+                    var next_pb = nextli.find(".tab-progress-bar");
+                    $(next_pb).animate(
+                        {
+                            width: "100%",
+                        },
+                        {
+                            easing: "linear",
+                            duration: 8000,
+                            complete: function () {
+                                $(".tab-progress-bar").css("width", "0%");
+                            },
+                        }
+                    );
+                };
+                var tabCycle = setInterval(tabChange, 8000);
+                // Tab click event handler
+                $(function () {
+                    $("#main-platform-tab-carousel .nav-tabs > li a").click(
+                        function (e) {
+                            e.preventDefault();
+                            // Parar o loop
+                            clearInterval(tabCycle);
+                            var prev_tabs = $(
+                                "#main-platform-tab-carousel .nav-tabs > li"
+                            );
+                            var prev_active = prev_tabs.filter(".active");
+                            $(prev_tabs).find(".tab-progress-bar").finish();
+
+                            $(prev_active).removeClass("active");
+                            $(this).closest("li").addClass("active");
+                            // mosta o tab clicado, default bootstrap
+                            $(this).tab("show");
+
+                            var this_pb = $(this).find(".tab-progress-bar");
+                            $(this_pb).animate(
+                                {
+                                    width: "100%",
+                                },
+                                {
+                                    easing: "linear",
+                                    duration: 8000,
+                                    //complete: $('.tab-progress-bar').removeAttr('style')
+                                    complete: function () {
+                                        $(this_pb).css("width", "0%");
+                                    },
+                                }
+                            );
+                            //setInterval(tabChange, 8000);
+                            setTimeout(function () {
+                                tabCycle = setInterval(tabChange, 8000);
+                            }, 0);
+                        }
+                    );
+                });
+            })(jQuery);
+        </script>
+
+        <!-- <script
+                type="text/javascript"
+                src="https://pathao.com/bn/wp-content/themes/webpathao/assets/js/bootstrap.min.js?ver=1.3.12"
+            ></script> -->
+    </body>
 </html>

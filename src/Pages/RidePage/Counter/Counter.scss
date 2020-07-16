@@ -1,0 +1,13 @@
+#counter {
+    .counter-inner {
+        position: relative;
+        padding: 20px 0;
+        top: -50px;
+        background: #fffbf6;
+        border-radius: 10px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

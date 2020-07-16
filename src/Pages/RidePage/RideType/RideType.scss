@@ -1,0 +1,36 @@
+#ride-type {
+    .category {
+        .nav-item {
+            list-style: none;
+            display: inline-block;
+            border: 1px solid #9507b2;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-right: 20px;
+
+            transition: ease-in-out 0.3s;
+
+            a {
+                text-decoration: none;
+                color: black;
+                transition: ease-in-out 0.3s;
+            }
+
+            &:hover {
+                background-color: #9507b2;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .slick-slide img {
+        display: initial;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        color: #000;
+    }
+}

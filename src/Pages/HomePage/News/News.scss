@@ -1,0 +1,46 @@
+#news {
+    .title {
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+
+    .card {
+        border-radius: 15px;
+        overflow: hidden;
+
+        .card-img-top {
+            border-radius: 15px;
+        }
+        img {
+            transition: ease-in-out 0.3s;
+            overflow: hidden;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .card-body {
+        overflow: hidden;
+        .card-title {
+            font-size: 22px;
+            line-height: 42px;
+        }
+        .card-tex {
+            color: #6b6b6b;
+            margin-bottom: 0;
+        }
+    }
+    .read-more-btn {
+        transition: ease-in-out 0.3s;
+        border-radius: 15px;
+        &:hover {
+            color: #9507b2;
+            border: 1px solid #9507b2;
+            border-radius: 15px;
+        }
+    }
+}
