@@ -1,0 +1,27 @@
+#breadcrumb {
+    nav {
+        display: flex;
+        align-items: center;
+        margin: 50px 0;
+
+        /* identical to box height */
+
+        i {
+            margin: 0 20px;
+            color: #31003c;
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #31003c;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
+}

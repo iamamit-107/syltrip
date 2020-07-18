@@ -1,5 +1,4 @@
 import React from "react";
-import "./CarForOccation.scss";
 
 import icon from "../../../images/right.png";
 import phoneBg from "../../../images/phone-bg.png";
@@ -14,25 +13,26 @@ import timer from "../../../images/ride/timer-icon.png";
 import Breadcrumb from "../../../Component/Breadcrumb/Breadcrumb";
 import PhoneCarousel from "../../../Component/PhoneCarousel/PhoneCarousel";
 
-const CarForOccation = () => {
+const BookTrucker = () => {
     return (
         <div id="car-for-occation">
             <div className="container">
                 {/* breadcrumb component */}
-                <Breadcrumb next="Syltrips Ride" />
+                <Breadcrumb next="Trucker365" />
 
                 {/* texts */}
                 <div className="row d-flex align-items-center">
                     <div className="col-lg-6">
                         <div className="heading">
-                            <h1>A car for every occation</h1>
+                            <h1>Book Truck faster than ever</h1>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Sequi, quod hic.
-                                Exercitationem, culpa dolores est tempore magni
-                                labore, minima mollitia neque in tempora
-                                recusandae pariatur expedita illum excepturi sit
-                                natus?
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Vehicula et tellus ornare
+                                mattis id sed lorem. Commodo cursus et hendrerit
+                                diam, cras in. Nulla vitae mi consequat, elit
+                                accumsan. Penatibus sed volutpat vivamus arcu.
+                                Fringilla tellus ullamcorper varius nec
+                                praesent.
                             </p>
                         </div>
                         <div className="icon-text">
@@ -40,13 +40,13 @@ const CarForOccation = () => {
                                 <span className="pr-3">
                                     <img src={icon} alt="" />
                                 </span>
-                                City Area
+                                Office/Commercial Move
                             </h5>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Quo aliquid quidem, debitis
-                                totam cum atque consectetur. Maxime eaque unde
-                                illo.
+                                adipiscing elit. Id eget phasellus a quam donec
+                                tincidunt. Commodo amet urna lectus sed velit
+                                purus, habitant posuere massa.
                             </p>
                             <div className="icon-box">
                                 <p>
@@ -74,13 +74,12 @@ const CarForOccation = () => {
                                 <span className="pr-3">
                                     <img src={icon} alt="" />
                                 </span>
-                                Outstation
+                                Home Move Service
                             </h5>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Quo aliquid quidem, debitis
-                                totam cum atque consectetur. Maxime eaque unde
-                                illo.
+                                adipiscing elit. In leo leo eu, leo. Turpis quam
+                                fringilla ultricies lectus ornare cras quis.
                             </p>
                             <div className="icon-box">
                                 <p>
@@ -108,13 +107,13 @@ const CarForOccation = () => {
                                 <span className="pr-3">
                                     <img src={icon} alt="" />
                                 </span>
-                                Rental/Marketplace
+                                Product Delivery Service
                             </h5>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Quo aliquid quidem, debitis
-                                totam cum atque consectetur. Maxime eaque unde
-                                illo.
+                                adipiscing elit. Id neque vitae et morbi lectus
+                                dapibus accumsan. Nulla semper libero, leo urna
+                                risus arcu quis nulla tristique.
                             </p>
                             <div className="icon-box">
                                 <p>
@@ -160,4 +159,4 @@ const CarForOccation = () => {
     );
 };
 
-export default CarForOccation;
+export default BookTrucker;

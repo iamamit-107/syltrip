@@ -76,14 +76,17 @@ const Header = () => {
                                         </NavLink>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/">
+                                        <NavLink
+                                            class="nav-link"
+                                            to="/jhotpot-solution"
+                                        >
                                             Jhotpot Solution
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/">
+                                        <NavLink class="nav-link" to="/trucker">
                                             Trucker 365
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="/">
@@ -91,9 +94,12 @@ const Header = () => {
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/">
+                                        <NavLink
+                                            class="nav-link"
+                                            to="/syltrips-ota"
+                                        >
                                             Syltrips OTA
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </div>

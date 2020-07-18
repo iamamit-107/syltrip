@@ -11,6 +11,17 @@ const ShowDescription = ({ products }) => {
                     <h1 style={{ fontSize: "24px", fontWeight: "500" }}>
                         {products.title}
                     </h1>
+                    <div className="d-flex">
+                        <p style={{ fontSize: "20px", color: "#000" }}>
+                            {products.info1}
+                        </p>
+                        <p
+                            className="pl-3"
+                            style={{ fontSize: "20px", color: "#000" }}
+                        >
+                            {products.info2}
+                        </p>
+                    </div>
                     <p> {products.description} </p>
                     <div className="icon-box">
                         <p>

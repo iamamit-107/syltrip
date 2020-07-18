@@ -1,10 +1,10 @@
 import React from "react";
-import "./HowWorks.scss";
+import "./HowItWorks.scss";
 
-import polygonBg from "../../../images/ride/Polygon-bg.png";
-import line from "../../../images/ride/line.png";
+import polygonBg from "../../images/ride/Polygon-bg.png";
+import line from "../../images/ride/line.png";
 
-const HowWorks = () => {
+const HowItWorks = ({ step1, step2, step3, step4 }) => {
     return (
         <div id="how-works">
             <div className="container">
@@ -21,28 +21,28 @@ const HowWorks = () => {
                             style={{ backgroundImage: `url(${polygonBg})` }}
                         >
                             <h1>1</h1>
-                            <p>Choose Destination</p>
+                            <p> {step1} </p>
                         </div>
                         <div
                             className="col-lg-3 col-md-6 polygon-bg"
                             style={{ backgroundImage: `url(${polygonBg})` }}
                         >
                             <h1>2</h1>
-                            <p>Find Car</p>
+                            <p> {step2} </p>
                         </div>
                         <div
                             className="col-lg-3 col-md-6 polygon-bg"
                             style={{ backgroundImage: `url(${polygonBg})` }}
                         >
                             <h1>3</h1>
-                            <p>Book Trip</p>
+                            <p> {step3} </p>
                         </div>
                         <div
                             className="col-lg-3 col-md-6 polygon-bg"
                             style={{ backgroundImage: `url(${polygonBg})` }}
                         >
                             <h1>4</h1>
-                            <p>Let's Go</p>
+                            <p> {step4} </p>
                         </div>
                     </div>
                 </div>
@@ -51,4 +51,4 @@ const HowWorks = () => {
     );
 };
 
-export default HowWorks;
+export default HowItWorks;

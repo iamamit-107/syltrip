@@ -1,25 +1,24 @@
 import React from "react";
-import "./Banner.scss";
 
-import bannerLogo from "../../../images/ride/ride-banner-logo.png";
-import bannerBg from "../../../images/ride/ride-bg.png";
+import bg from "../../../images/trucker/bannerBg.png";
+import logo from "../../../images/trucker/logo.png";
 import CommonBanner from "../../../Component/CommonBanner/CommonBanner";
 
-const Banner = () => {
-    const header = "It’s time change the";
-    const headerBold = "Ride Experience";
+const TruckerBanner = () => {
+    const header = "Fastest Truck Booking";
+    const headerBold = "In Bangladesh";
     const desc = "Greater Comfort, Stronger performance, Improved safetty.";
     return (
         <>
             <CommonBanner
-                bg={bannerBg}
-                logo={bannerLogo}
                 header={header}
                 headerBold={headerBold}
                 desc={desc}
+                bg={bg}
+                logo={logo}
             />
         </>
     );
 };
 
-export default Banner;
+export default TruckerBanner;

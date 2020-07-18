@@ -1,25 +1,24 @@
 import React from "react";
-import "./Banner.scss";
-
-import bannerLogo from "../../../images/ride/ride-banner-logo.png";
-import bannerBg from "../../../images/ride/ride-bg.png";
 import CommonBanner from "../../../Component/CommonBanner/CommonBanner";
 
-const Banner = () => {
-    const header = "It’s time change the";
-    const headerBold = "Ride Experience";
+import bg from "../../../images/jhotpot/bannerBg.png";
+import logo from "../../../images/jhotpot/logo.png";
+
+const JhotpotBanner = () => {
+    const header = "Get any services to";
+    const headerBold = "your door in fastest time";
     const desc = "Greater Comfort, Stronger performance, Improved safetty.";
     return (
         <>
             <CommonBanner
-                bg={bannerBg}
-                logo={bannerLogo}
                 header={header}
                 headerBold={headerBold}
                 desc={desc}
+                bg={bg}
+                logo={logo}
             />
         </>
     );
 };
 
-export default Banner;
+export default JhotpotBanner;

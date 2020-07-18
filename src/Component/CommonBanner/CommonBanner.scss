@@ -1,0 +1,36 @@
+#banner {
+    height: 85vh;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    p {
+        color: white;
+        margin-top: 20px;
+    }
+
+    .overlay {
+        height: 100%;
+        background: linear-gradient(
+            65.28deg,
+            rgba(30, 30, 30, 0.75) -1.69%,
+            rgba(0, 0, 0, 0.01) 82.8%
+        );
+        .container {
+            height: 100%;
+            padding-left: 100px;
+
+            .row {
+                height: 100%;
+
+                h1 {
+                    font-weight: normal;
+
+                    .bold {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
